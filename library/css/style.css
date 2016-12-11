@@ -909,7 +909,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .blue-btn, .comment-reply-link, #submit {
   display: inline-block;
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   color: #fff;
   font-size: 0.9em;
@@ -991,7 +991,7 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #eaedf2;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
@@ -1252,7 +1252,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #5c6b80;
@@ -1364,7 +1364,7 @@ h5, .h5 {
 HEADER STYLES
 *********************/
 .header {
-  background-color: #323944; }
+  background-color: #000; }
 
 #logo {
   margin: 0.75em 0; }
@@ -1511,7 +1511,7 @@ POSTS & CONTENT STYLES
     max-width: 100%;
     height: auto; }
   .entry-content pre {
-    background: #323944;
+    background: #000;
     color: #f8f9fa;
     font-size: 0.9em;
     padding: 1.5em;
@@ -1741,7 +1741,7 @@ FOOTER STYLES
 *********************/
 .footer {
   clear: both;
-  background-color: #323944;
+  background-color: #000;
   color: #f8f9fa; }
 
 /*
@@ -1874,7 +1874,7 @@ you can add resource intensive styles.
     /* highlight current page */
     /* end current highlighters */ }
     .nav ul {
-      background: #323944;
+      background: #000;
       margin-top: 0; }
     .nav li {
       float: left;
