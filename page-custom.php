@@ -12,7 +12,7 @@
  * For more info: http://codex.wordpress.org/Page_Templates
 */
 ?>
-
+<!--page-custom-->
 <?php get_header(); ?>
 
 			<div id="content">

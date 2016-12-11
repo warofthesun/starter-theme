@@ -1,3 +1,4 @@
+<!--comments-->
 <?php
 /*
 The comments page for Bones
