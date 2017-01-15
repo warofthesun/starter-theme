@@ -14,7 +14,7 @@
  * For more info: http://codex.wordpress.org/Post_Type_Templates
 */
 ?>
-
+<!--single-custom_type-->
 <?php get_header(); ?>
 
 			<div id="content">

@@ -11,7 +11,7 @@
  * For more info: http://codex.wordpress.org/Post_Type_Templates#Displaying_Custom_Taxonomies
 */
 ?>
-
+<!--taxonomy-custom_cat-->
 <?php get_header(); ?>
 
 			<div id="content">
