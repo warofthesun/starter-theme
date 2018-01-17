@@ -25,6 +25,10 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
+img {
+	image-rendering: -webkit-optimize-contrast;
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
