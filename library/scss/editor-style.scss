@@ -168,7 +168,10 @@ body#tinymce.wp-editor {
 			margin: 0 0 1.5em 0;
 			max-width: 100%;
 			height: auto;
+
 		}
+
+
 
 		.size-auto,
 		.size-full,
@@ -186,6 +189,10 @@ body#tinymce.wp-editor {
 			padding: 1.5em;
 			margin: 0 0 1.5em;
 			border-radius: 3px;
+		}
+
+		.mce-content-body img.mce-wp-more {
+			height: 20px !important;
 		}
 
 		/*********************
@@ -218,4 +225,3 @@ body#tinymce.wp-editor {
 
 
 }
-
