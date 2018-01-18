@@ -82,30 +82,19 @@ https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
 */
 /*
- i imported this one in the functions file so bones would look sweet.
- don't forget to remove it for your site.
-
-$lato:              'Lato', $sans-serif;
-*/
-/*
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
 p {
-  -ms-word-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
+  -ms-word-wrap: normal;
+  word-break: normal;
+  word-wrap: normal;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+      hyphens: none;
   -webkit-hyphenate-before: 2;
   -webkit-hyphenate-after: 3;
-  hyphenate-lines: 3;
-  -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga", "dlig";
-  -o-font-feature-settings: "liga", "dlig";
-  font-feature-settings: "liga", "dlig"; }
+  hyphenate-lines: 3; }
 
 /******************************************************************
 Site Name:
@@ -191,19 +180,22 @@ NAVIGATION STYLES
 /* .menu is clearfixed inside mixins.scss */
 .menu {
   /* end .menu ul */ }
-  .menu ul {
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
-    .menu ul li {
-      /*
-      plan your menus and drop-downs wisely.
-      */ }
-      .menu ul li a {
-        /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
+
+.menu ul {
+  /* end .menu ul li */
+  /* highlight current page */
+  /* end current highlighters */ }
+
+.menu ul li {
+  /*
+				plan your menus and drop-downs wisely.
+				*/ }
+
+.menu ul li a {
+  /*
+					you can use hover styles here even though this size
+					has the possibility of being a mobile device.
+					*/ }
 
 /* end .menu */
 /*********************
@@ -212,19 +204,22 @@ POSTS & CONTENT STYLES
 /* entry content */
 .entry-content {
   /* at this larger size, we can start to align images */ }
-  .entry-content .alignleft, .entry-content img.alignleft {
-    margin-right: 1.5em;
-    display: inline;
-    float: left; }
-  .entry-content .alignright, .entry-content img.alignright {
-    margin-left: 1.5em;
-    display: inline;
-    float: right; }
-  .entry-content .aligncenter, .entry-content img.aligncenter {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    clear: both; }
+
+.entry-content .alignleft, .entry-content img.alignleft {
+  margin-right: 1.5em;
+  display: inline;
+  float: left; }
+
+.entry-content .alignright, .entry-content img.alignright {
+  margin-left: 1.5em;
+  display: inline;
+  float: right; }
+
+.entry-content .aligncenter, .entry-content img.aligncenter {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  clear: both; }
 
 /* end .entry-content */
 /*********************
@@ -268,58 +263,68 @@ NAVIGATION STYLES
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
-  .nav ul {
-    background: #000;
-    margin-top: 0; }
-  .nav li {
-    float: left;
-    position: relative;
-    /*
-    plan your menus and drop-downs wisely.
-    */
-    /* showing sub-menus */ }
-    .nav li a {
-      border-bottom: 0;
-      /*
-      you can use hover styles here even though this size
-      has the possibility of being a mobile device.
-      */ }
-      .nav li a:hover, .nav li a:focus {
-        color: #fff;
-        text-decoration: underline; }
-    .nav li ul.sub-menu,
-    .nav li ul.children {
-      margin-top: 0;
-      border: 1px solid #ccc;
-      border-top: 0;
-      position: absolute;
-      visibility: hidden;
-      z-index: 8999;
-      /* highlight sub-menu current page */ }
-      .nav li ul.sub-menu li,
-      .nav li ul.children li {
-        /*
-        if you need to go deeper, go nuts
-        just remember deeper menus suck
-        for usability. k, bai.
-        */ }
-        .nav li ul.sub-menu li a,
-        .nav li ul.children li a {
-          padding-left: 10px;
-          border-right: 0;
-          display: block;
-          width: 180px;
-          border-bottom: 1px solid #ccc; }
-        .nav li ul.sub-menu li:last-child a,
-        .nav li ul.children li:last-child a {
-          border-bottom: 0; }
-        .nav li ul.sub-menu li ul,
-        .nav li ul.children li ul {
-          top: 0;
-          left: 100%; }
-    .nav li:hover > ul {
-      top: auto;
-      visibility: visible; }
+
+.nav ul {
+  background: #000;
+  margin-top: 0; }
+
+.nav li {
+  float: left;
+  position: relative;
+  /*
+		plan your menus and drop-downs wisely.
+		*/
+  /* showing sub-menus */ }
+
+.nav li a {
+  border-bottom: 0;
+  /*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/ }
+
+.nav li a:hover, .nav li a:focus {
+  color: #fff;
+  text-decoration: underline; }
+
+.nav li ul.sub-menu,
+.nav li ul.children {
+  margin-top: 0;
+  border: 1px solid #ccc;
+  border-top: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 8999;
+  /* highlight sub-menu current page */ }
+
+.nav li ul.sub-menu li,
+.nav li ul.children li {
+  /*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/ }
+
+.nav li ul.sub-menu li a,
+.nav li ul.children li a {
+  padding-left: 10px;
+  border-right: 0;
+  display: block;
+  width: 180px;
+  border-bottom: 1px solid #ccc; }
+
+.nav li ul.sub-menu li:last-child a,
+.nav li ul.children li:last-child a {
+  border-bottom: 0; }
+
+.nav li ul.sub-menu li ul,
+.nav li ul.children li ul {
+  top: 0;
+  left: 100%; }
+
+.nav li:hover > ul {
+  top: auto;
+  visibility: visible; }
 
 /* end .nav */
 /*********************
@@ -335,12 +340,14 @@ SIDEBARS & ASIDES
 .widget {
   padding: 0 10px;
   margin: 2.2em 0; }
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */ }
-    .widget ul li ul {
-      margin-top: 0.75em;
-      padding-left: 1em; }
+
+.widget ul li {
+  margin-bottom: 0.75em;
+  /* deep nesting */ }
+
+.widget ul li ul {
+  margin-top: 0.75em;
+  padding-left: 1em; }
 
 /* links widget */
 /* meta widget */
@@ -363,10 +370,10 @@ mobile. Make sure to double check these!
 */
 .footer-links ul li {
   /*
-  be careful with the depth of your menus.
-  it's very rare to have multi-depth menus in
-  the footer.
-  */ }
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/ }
 
 /* end .footer-links */
 /******************************************************************
@@ -405,5 +412,3 @@ header.php file to see what they are:
 .lt-ie8 .class { ... }
 
 */
-
-/*# sourceMappingURL=ie.css.map */

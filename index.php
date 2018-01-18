@@ -15,7 +15,7 @@
 
 									<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 									<p class="byline entry-meta vcard">
-                                                                        <?php printf( __( 'Posted', 'bonestheme' ).' %1$s %2$s',
+                                      <?php printf( __( 'Posted', 'bonestheme' ).' %1$s %2$s',
                        								/* the time the post was published */
                        								'<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
                        								/* the author of the post */
@@ -26,7 +26,7 @@
 								</header>
 
 								<section class="entry-content cf">
-									<?php the_content(); ?>
+									<?php the_excerpt(); ?>
 								</section>
 
 								<footer class="article-footer cf">
