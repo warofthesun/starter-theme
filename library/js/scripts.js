@@ -105,6 +105,9 @@ function loadGravatars() {
 } // end function
 
 
+
+
+
 /*
  * Put all your regular jQuery in here.
 */

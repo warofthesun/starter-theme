@@ -250,6 +250,31 @@ function bones_fonts() {
 add_action('wp_enqueue_scripts', 'bones_fonts');
 
 
+/* Load ScrollMagic Scripts */
+
+function scrollmagic_scripts() {
+
+		wp_register_script( 'greensock', get_stylesheet_directory_uri() . '/library/js/libs/greensock/TweenMax.min.js', array(), '', false );
+
+    wp_register_script( 'scrollmagic', get_stylesheet_directory_uri() . '/library/scrollmagic/uncompressed/ScrollMagic.js', array(), '', false );
+
+    wp_register_script( 'animation', get_stylesheet_directory_uri() . '/library/scrollmagic/uncompressed/plugins/animation.gsap.js', array(), '', false );
+
+    wp_register_script( 'indicators', get_stylesheet_directory_uri() . '/library/scrollmagic/uncompressed/plugins/debug.addIndicators.js', array(), '', false );
+
+
+
+		// enqueue styles and scripts
+		wp_enqueue_script( 'greensock' );
+		wp_enqueue_script( 'scrollmagic' );
+		wp_enqueue_script( 'animation' );
+    wp_enqueue_script( 'indicators' );
+}
+
+add_action( 'wp_enqueue_scripts', 'scrollmagic_scripts' );
+
+
+
 /**
  * Register the required plugins for this theme.
  *
