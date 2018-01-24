@@ -9,10 +9,6 @@
 			<div id="content">
 
 				<div id="inner-content" class="wrap cf">
-
-
-
-
 							<div id="example-wrapper">
 								<div class="scrollContent">
 									<section class="demo" id="bezier">
