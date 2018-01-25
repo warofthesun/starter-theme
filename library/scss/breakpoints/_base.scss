@@ -29,6 +29,10 @@ img {
 	image-rendering: -webkit-optimize-contrast;
 }
 
+#inner-header {
+	flex-direction: column;
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
