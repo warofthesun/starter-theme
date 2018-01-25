@@ -105,11 +105,7 @@ function custom_post() {
 		)
 	);
 
-	/*
-		looking for custom meta boxes?
-		check out this fantastic tool:
-		https://github.com/jaredatch/Custom-Metaboxes-and-Fields-for-WordPress
-	*/
+	
 
 
 ?>

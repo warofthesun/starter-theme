@@ -1454,7 +1454,7 @@ textarea,
   width: 100%;
   max-width: 400px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #eaedf2;
+  background-color: #f7f8fa;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
 
@@ -1491,7 +1491,7 @@ textarea:focus,
 textarea:active,
 .field:focus,
 .field:active {
-  background-color: #f7f8fa;
+  background-color: #fff;
   outline: none; }
 
 input[type="text"].error, input[type="text"].is-invalid,
@@ -1730,7 +1730,7 @@ body {
 img {
   image-rendering: -webkit-optimize-contrast; }
 
-#inner-header {
+#inner-header, #inner-footer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
