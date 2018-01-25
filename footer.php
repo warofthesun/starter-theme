@@ -1,6 +1,6 @@
 			<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
 
-				<div id="inner-footer" class="wrap cf">
+				<div id="inner-footer" class="wrap cf row">
 
 					<nav role="navigation">
 						<?php wp_nav_menu(array(
@@ -25,7 +25,7 @@
 			</footer>
 
 		</div>
-		
+
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
