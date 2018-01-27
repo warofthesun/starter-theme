@@ -113,6 +113,10 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
+	$("#mobile-nav").click(function(){
+        $(".nav").toggleClass("show");
+				$("#mobile-nav").toggleClass("show");
+			});
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it

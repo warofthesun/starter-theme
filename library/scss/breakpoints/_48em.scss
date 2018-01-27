@@ -26,13 +26,27 @@ them in here, they won't work.
 /*********************
 NAVIGATION STYLES
 *********************/
+#mobile-nav {
+	display: none;
+}
 
-.nav {}
+.nav {
+	flex-direction: row;
+	height: auto;
+	opacity: 1;
+
+	li {
+		border-bottom: 0;
+	}
+}
+
 
 	/* .menu is clearfixed inside mixins.scss */
 	.menu {
 		ul {
 			li {
+				text-align: left;
+
 				a {
 
 					/*

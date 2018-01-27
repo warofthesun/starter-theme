@@ -1736,6 +1736,19 @@ img {
       -ms-flex-direction: column;
           flex-direction: column; }
 
+#inner-footer .nav {
+  opacity: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+#inner-footer .nav li {
+  border-bottom: 0px; }
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -1860,15 +1873,59 @@ the wp_menu function; this is so we can
 easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
+
 */
+#mobile-nav {
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: -2em;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
+#mobile-nav.show {
+  margin-top: 0em;
+  padding: .5em;
+  background-color: white; }
+
+#mobile-nav.show:after {
+  content: "\f106";
+  text-align: center;
+  width: 100%;
+  display: inline;
+  font-family: fontawesome; }
+
+#mobile-nav:after {
+  content: "\f107";
+  text-align: center;
+  width: 100%;
+  display: inline;
+  font-family: fontawesome; }
+
 .nav {
   border-bottom: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  height: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
 
+.nav.show {
+  opacity: 1;
+  height: 100%; }
+
 .nav li {
+  border-bottom: 1px solid white;
+  text-align: center;
   /*
 		so you really have to rethink your dropdowns for mobile.
 		you don't want to have it expand too much because the
@@ -2344,6 +2401,17 @@ them in here, they won't work.
   /*********************
 NAVIGATION STYLES
 *********************/
+  #mobile-nav {
+    display: none; }
+  .nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: auto;
+    opacity: 1; }
+  .nav li {
+    border-bottom: 0; }
   /* .menu is clearfixed inside mixins.scss */
   .menu {
     /* end .menu ul */ }
@@ -2352,6 +2420,7 @@ NAVIGATION STYLES
     /* highlight current page */
     /* end current highlighters */ }
   .menu ul li {
+    text-align: left;
     /*
 				plan your menus and drop-downs wisely.
 				*/ }
@@ -2433,8 +2502,6 @@ NAVIGATION STYLES
     background: #000;
     margin-top: 0; }
   .nav li {
-    float: left;
-    position: relative;
     /*
 		plan your menus and drop-downs wisely.
 		*/
