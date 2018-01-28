@@ -28,7 +28,9 @@
 
 		<?php // all js scripts are loaded in library/bones.php ?>
 		<?php wp_footer(); ?>
+		
 		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+
 	</body>
 
 </html> <!-- end of site. what a ride! -->
