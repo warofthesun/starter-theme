@@ -24,6 +24,7 @@
 *.rar
 *.tar
 *.zip
+!advanced-custom-fields-pro.zip
 
 # Logs and databases #
 ######################
