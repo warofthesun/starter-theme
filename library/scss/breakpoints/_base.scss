@@ -450,7 +450,7 @@ POSTS & CONTENT STYLES
 			blockquote {
 				margin: 0 0 1.5em 0.75em;
 				padding: 0 0 0 0.75em;
-				border-left: 3px solid $blue;
+				border-left: 3px solid $accent;
 				font-style: italic;
 				color: $meta-gray;
 
@@ -640,10 +640,10 @@ PAGE NAVI STYLES
       padding: 0.75em;
       min-width: 1em;
       display: block;
-      color: $blue;
+      color: $accent;
 
       &:hover, &:focus {
-      	background-color: $blue;
+      	background-color: $accent;
       	color: $white;
       }
     }
@@ -847,7 +847,7 @@ COMMENT STYLES
 
 	/* comment reply link */
 	.comment-reply-link {
-		@extend .blue-btn;
+		@extend .accent-btn;
 		font-size: 0.9em;
 		float: right;
 
@@ -903,7 +903,7 @@ COMMENT FORM STYLES
 
 	/* comment submit button */
 	#submit {
-		@extend .blue-btn;
+		@extend .accent-btn;
 		float: right;
 		font-size: 1em;
 	}
