@@ -10,31 +10,6 @@ function my_theme_register_required_plugins() {
 	 */
 	$plugins = array(
 
-		// All-in-One Migration
-		 // array(
-		 // 	'name'     				=> 'All-in-One WP Migration', // The plugin name
-		 // 	'slug'     				=> 'advanced-custom-fields', // The plugin slug (typically the folder name)
-		 // 	'source'   				=> 'https://downloads.wordpress.org/plugin/all-in-one-wp-migration.zip', // The plugin source
-		 // 	'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-		 // 	'version' 				=> '6.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-		 // 	'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-		 // 	'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-		 // 	'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
-		 // ),
-
-
-		// Require ACF Pro
-		array(
-			'name'     				=> 'Advanced Custom Fields Pro', // The plugin name
-			'slug'     				=> 'advanced-custom-fields-pro', // The plugin slug (typically the folder name)
-			'source'   				=> get_stylesheet_directory_uri().'/library/tgm-plugin-activation/plugins/advanced-custom-fields-pro.zip', // The plugin source
-			'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-			'version' 				=> '1.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
-		),
-
     // GitHub Updater
 		array(
 			'name'     				=> 'GitHub Updater', // The plugin name
