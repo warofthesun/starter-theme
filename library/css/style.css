@@ -1692,18 +1692,6 @@ This are the mobile styles. It's what people see on their phones. If
 you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Base Mobile Stylesheet
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
-
-******************************************************************/
 /*********************
 GENERAL STYLES
 *********************/
@@ -1911,13 +1899,7 @@ and more scalable.
       display: block;
       color: #fff;
       text-decoration: none;
-      padding: 0.75em;
-      /*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/ }
+      padding: 0.75em; }
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
@@ -1928,6 +1910,10 @@ POSTS & CONTENT STYLES
 *********************/
 #content {
   margin-top: 1.5em; }
+
+article .hero--image img {
+  width: 100%;
+  height: auto; }
 
 .hentry {
   background-color: #fff;
