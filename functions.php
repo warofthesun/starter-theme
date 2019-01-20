@@ -290,6 +290,13 @@ function starter_comments( $comment, $args, $depth ) {
 } // don't remove this bracket!
 
 
+/*
+This is a modification of a function found in the
+twentythirteen theme where we can declare some
+external fonts. If you're using Google Fonts, you
+can replace these fonts, change it in your scss files
+and be up and running in seconds.
+*/
 function starter_fonts() {
   wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Lora:400,400i|Roboto:300,300i,400,400i,500,700,900');
 }
