@@ -172,7 +172,10 @@ NAVIGATION STYLES
       -ms-flex-direction: row;
           flex-direction: row;
   height: auto;
-  opacity: 1; }
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .nav li {
     border-bottom: 0; }
 

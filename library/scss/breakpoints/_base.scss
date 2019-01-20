@@ -208,25 +208,10 @@ and more scalable.
 		padding: .5em;
 		background-color: white;
 
-		&:after {
-			content: "\f106";
-			text-align: center;
-			width: 100%;
-			display: inline;
-			font-family: fontawesome;
-
+		.fa-chevron-down {
+			transform: rotate(180deg);
 		}
 	}
-
-	&:after {
-		content: "\f107";
-		text-align: center;
-		width: 100%;
-		display: inline;
-		font-family: fontawesome;
-
-	}
-
 }
 
 
@@ -237,11 +222,13 @@ and more scalable.
 	display: flex;
 	flex-direction: column;
 	opacity: 0;
+	display: none;
 	height: 0;
 	transition: all .5s;
 
 	&.show {
 		opacity: 1;
+		display: flex;
 		height: 100%;
 	}
 

@@ -1717,7 +1717,7 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 img {
-  image-rendering: -webkit-optimize-contrast; }
+  image-rendering: auto; }
 
 #inner-header, #inner-footer {
   -webkit-box-orient: vertical;
@@ -1869,18 +1869,9 @@ and more scalable.
     margin-top: 0em;
     padding: .5em;
     background-color: white; }
-    #mobile-nav.show:after {
-      content: "\f106";
-      text-align: center;
-      width: 100%;
-      display: inline;
-      font-family: fontawesome; }
-  #mobile-nav:after {
-    content: "\f107";
-    text-align: center;
-    width: 100%;
-    display: inline;
-    font-family: fontawesome; }
+    #mobile-nav.show .fa-chevron-down {
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
 
 .nav {
   border-bottom: 0;
@@ -1893,6 +1884,7 @@ and more scalable.
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 0;
+  display: none;
   height: 0;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -1901,6 +1893,9 @@ and more scalable.
   /* end current highlighters */ }
   .nav.show {
     opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     height: 100%; }
   .nav li {
     border-bottom: 1px solid white;
@@ -2345,7 +2340,10 @@ NAVIGATION STYLES
         -ms-flex-direction: row;
             flex-direction: row;
     height: auto;
-    opacity: 1; }
+    opacity: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     .nav li {
       border-bottom: 0; }
   /* .menu is clearfixed inside mixins.scss */
